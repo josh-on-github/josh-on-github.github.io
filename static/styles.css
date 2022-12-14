@@ -1,0 +1,52 @@
+body{
+    background-color: darkslateblue;
+}
+
+img{
+    max-width: 25vw;
+    /* max-height: 25vh; */
+    float: center;
+    border-radius: 100%;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-areas: 
+    "header"
+    "about"
+    "projects"
+    "footer";
+    text-align: center;
+    justify-content: center;
+    width: 100vw;
+}
+
+.container > *{
+    display: flex;
+    max-width: 95vw;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+header{
+    grid-area: header;
+    text-align: center;
+    font: normal bold 5vw fantasy;
+}
+
+footer{
+    grid-area: footer;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+/* @media screen and (min-width: 600px){
+
+}
+
+@media screen and (min-width: 960px){
+
+} */
