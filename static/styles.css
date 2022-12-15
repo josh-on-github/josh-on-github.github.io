@@ -8,6 +8,9 @@ body, html{
     display: flex;
     flex-direction: column;
     align-items: center;
+    /* padding: 0px;
+    margin: 0px;
+    overflow-x: hidden; */
 }
 
 img:hover{
@@ -49,7 +52,7 @@ i:hover{
     text-align: center;
     justify-content: center;
     padding: 5vw;
-    margin: 5vw
+    margin: 5vw;
 }
 
 .container > *{
@@ -59,6 +62,7 @@ i:hover{
     align-items: center;
     align-content: center;
     font: normal bold 3vw 'Times New Roman', Times, serif;
+    /* margin: auto; */
 }
 
 #header{
