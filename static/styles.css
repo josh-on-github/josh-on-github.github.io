@@ -29,9 +29,12 @@ i:hover{
 }
 
 #icons{
-    /* height: 6vh;
-    width: 3vw; */
     border-radius: 0%;
+}
+
+#flask{
+    width: 30px;
+    height: 30px;
 }
 
 .container{
@@ -46,7 +49,7 @@ i:hover{
     text-align: center;
     justify-content: center;
     max-width: 100vw;
-    padding: 1vw;
+    padding: 5vw;
     margin: 5vw
 }
 
@@ -62,7 +65,7 @@ i:hover{
 #header{
     grid-area: header;
     text-align: center;
-    font: normal bold 5vw fantasy;
+    font: normal bold 5vw 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 #about{
@@ -83,12 +86,28 @@ i:hover{
     justify-content: space-around;
 }
 
-/* @media screen and (min-width: 600px){
-    #icons{
-        height: 6vh;
-        width: 3vw;
+#tablet{
+    display: none;
+}
+
+@media screen and (min-width: 600px){
+    #mobile{
+        display: none;
+    }    
+    #tablet{
+        display: flex;
     }
-} */
+
+    #header{
+        font: normal bold 7vw fantasy;
+    }
+    
+
+    #icons{
+        height: 50%;
+        width: 50%;
+    }
+}
 
 /* @media screen and (min-width: 960px){
 
