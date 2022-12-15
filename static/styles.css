@@ -1,4 +1,4 @@
-body{
+body, html{
     background-image: url("butterfly.jpg");
     background-attachment: fixed;
     background-size: cover;
@@ -24,17 +24,17 @@ img{
     transform: scaleX(-1);
 }
 
-i:hover{
-    transform: scaleX(-1);
-}
-
 #icons{
     border-radius: 0%;
 }
 
+i:hover{
+    transform: scaleX(-1);
+}
+
 #flask{
     width: 30px;
-    height: 30px;
+    height: 25px;
 }
 
 .container{
@@ -69,14 +69,12 @@ i:hover{
 }
 
 #about{
-    /* font: normal bold 3vw fantasy; */
     padding: 1vw;
 }
 
 #projects{
     grid-area: projects;
     flex: row wrap;
-    /* font: normal bold 2vw fantasy; */
 }
 
 
@@ -90,10 +88,15 @@ i:hover{
     display: none;
 }
 
+#desktop{
+    display: none;
+}
+
 @media screen and (min-width: 600px){
     #mobile{
         display: none;
     }    
+
     #tablet{
         display: flex;
     }
@@ -102,13 +105,42 @@ i:hover{
         font: normal bold 7vw fantasy;
     }
     
-
     #icons{
         height: 50%;
         width: 50%;
     }
 }
 
-/* @media screen and (min-width: 960px){
+@media screen and (min-width: 960px){
+    #tablet{
+        display: none;
+    }
 
-} */
+    #desktop{
+        display: flex;
+    }
+
+    .container{
+        grid-template-columns: 30% 70%;
+        grid-template-areas: 
+        "header header"
+        "projects about"
+        "projects about"
+        "footer footer";
+        padding: 1vw;
+    }
+    
+    #projects{
+        margin: 3vw;
+        padding: 2vw;
+    }
+
+    #about{
+        margin: 3vw;
+        padding: 2vw;
+    }
+
+    #footer{
+        padding: 3vw;
+    }
+}
