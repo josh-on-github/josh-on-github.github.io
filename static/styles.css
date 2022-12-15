@@ -62,7 +62,6 @@ i:hover{
     align-items: center;
     align-content: center;
     font: normal bold 3vw 'Times New Roman', Times, serif;
-    /* margin: auto; */
 }
 
 #header{
@@ -79,7 +78,6 @@ i:hover{
     grid-area: projects;
     flex: row wrap;
 }
-
 
 #footer{
     grid-area: footer;
@@ -105,7 +103,7 @@ i:hover{
     }
 
     #header{
-        font: normal bold 7vw fantasy;
+        font: normal bold 7vw 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     }
     
     #icons{
