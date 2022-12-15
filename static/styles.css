@@ -100,6 +100,7 @@ i:hover{
 
     #tablet{
         display: flex;
+        justify-content: center;
     }
 
     #header{
@@ -107,8 +108,8 @@ i:hover{
     }
     
     #icons{
-        height: 50%;
-        width: 50%;
+        height: 65%;
+        width: 65%;
     }
 }
 
@@ -139,6 +140,11 @@ i:hover{
     #about{
         margin: 3vw;
         padding: 2vw;
+    }
+
+    #icons{
+        height: 100%;
+        width: 100%;
     }
 
     #footer{
