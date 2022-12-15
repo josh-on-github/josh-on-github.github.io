@@ -8,12 +8,10 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
-    /* margin: auto; */
 }
 
 img{
     max-width: 25vw;
-    /* max-height: 25vh; */
     float: center;
     border-radius: 50%;
 }
@@ -48,9 +46,23 @@ header{
     font: normal bold 5vw fantasy;
 }
 
+/* #about{
+ 
+} */
+
+#projects{
+    grid-area: projects;
+    flex: row wrap;
+}
+
+#flask{
+    height: 30px;
+    width: 30px;
+}
+
 #footer{
     grid-area: footer;
-    flex-direction: row;
+    flex: row wrap;
     justify-content: space-around;
 }
 
