@@ -1,10 +1,13 @@
 body{
-    background-image: url("american_bison.jpg");
+    background-image: url("butterfly.jpg");
     background-attachment: fixed;
     background-size: cover;
     background-position: center;
     min-width: 100vw;
     min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     /* margin: auto; */
 }
 
@@ -23,16 +26,16 @@ img{
     "about"
     "projects"
     "footer";
-    background-color: rgba(71, 61, 139, 0.801);
+    background-color: rgba(106, 100, 146, 0.9);
     text-align: center;
     justify-content: center;
-    /* max-width: 100vw; */
-    /* margin: auto; */
+    max-width: 100vw;
+    padding: 1vw;
+    margin: 5vw
 }
 
 .container > *{
     display: flex;
-    max-width: 90vw;
     flex-flow: column;
     justify-content: center;
     align-items: center;
@@ -45,10 +48,10 @@ header{
     font: normal bold 5vw fantasy;
 }
 
-footer{
+#footer{
     grid-area: footer;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-around;
 }
 
 /* @media screen and (min-width: 600px){
