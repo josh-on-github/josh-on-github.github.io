@@ -14,6 +14,10 @@ img:hover{
     transform: scaleX(-1);
 }
 
+i:hover{
+    transform: scaleX(-1);
+}
+
 img{
     max-width: 25vw;
     float: center;
