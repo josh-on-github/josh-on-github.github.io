@@ -10,6 +10,10 @@ body{
     align-items: center;
 }
 
+img:hover{
+    transform: scaleX(-1);
+}
+
 img{
     max-width: 25vw;
     float: center;
