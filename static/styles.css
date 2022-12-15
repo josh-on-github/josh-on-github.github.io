@@ -1,0 +1,147 @@
+body, html{
+    background-image: url("butterfly.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px;
+    margin: 0px;
+    overflow-x: hidden;
+}
+
+img:hover{
+    transform: scaleX(-1);
+}
+
+img{
+    max-width: 25vw;
+    float: center;
+    border-radius: 50%;
+}
+
+#icons:hover{
+    transform: scaleX(-1);
+}
+
+#icons{
+    border-radius: 0%;
+}
+
+i:hover{
+    transform: scaleX(-1);
+}
+
+#flask{
+    width: 30px;
+    height: 25px;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-areas: 
+    "header"
+    "about"
+    "projects"
+    "footer";
+    background-color: rgba(106, 100, 146, 0.9);
+    text-align: center;
+    justify-content: center;
+    padding: 5vw;
+    margin: 5vw;
+}
+
+.container > *{
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    font: normal bold 3vw 'Times New Roman', Times, serif;
+}
+
+#header{
+    grid-area: header;
+    text-align: center;
+    font: normal bold 5vw 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#about{
+    padding: 1vw;
+}
+
+#projects{
+    grid-area: projects;
+    flex: row wrap;
+}
+
+#footer{
+    grid-area: footer;
+    flex: row wrap;
+    justify-content: space-around;
+}
+
+#tablet{
+    display: none;
+}
+
+#desktop{
+    display: none;
+}
+
+@media screen and (min-width: 600px){
+    #mobile{
+        display: none;
+    }    
+
+    #tablet{
+        display: flex;
+    }
+
+    #header{
+        font: normal bold 7vw 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+    
+    #icons{
+        height: 50%;
+        width: 50%;
+    }
+}
+
+@media screen and (min-width: 960px){
+    #tablet{
+        display: none;
+    }
+
+    #desktop{
+        display: flex;
+    }
+
+    .container{
+        grid-template-columns: 30% 70%;
+        grid-template-areas: 
+        "header header"
+        "projects about"
+        "projects about"
+        "footer footer";
+        padding: 1vw;
+    }
+    
+    #projects{
+        margin: 3vw;
+        padding: 2vw;
+    }
+
+    #about{
+        margin: 3vw;
+        padding: 2vw;
+    }
+
+    #footer{
+        padding: 3vw;
+    }
+}
