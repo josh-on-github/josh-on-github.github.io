@@ -31,13 +31,22 @@ img{
     border-radius: 0%;
 }
 
+i{
+    color: rgb(2, 71, 2);
+}
+
 i:hover{
     transform: scaleX(-1);
+}
+
+#mail:hover{
+    transform: rotate(180deg);
 }
 
 #flask{
     width: 30px;
     height: 25px;
+    color: rgba(2, 71, 2);
 }
 
 .container{
