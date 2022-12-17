@@ -94,20 +94,20 @@ i:hover{
     justify-content: space-around;
 }
 
-#tablet{
+.tablet{
     display: none;
 }
 
-#desktop{
+.desktop{
     display: none;
 }
 
 @media screen and (min-width: 600px){
-    #mobile{
+    .mobile{
         display: none;
     }    
 
-    #tablet{
+    .tablet{
         display: flex;
         justify-content: center;
     }
@@ -123,11 +123,11 @@ i:hover{
 }
 
 @media screen and (min-width: 960px){
-    #tablet{
+    .tablet{
         display: none;
     }
 
-    #desktop{
+    .desktop{
         display: flex;
     }
 
