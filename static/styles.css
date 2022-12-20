@@ -49,6 +49,12 @@ i:hover{
     color: rgb(26, 2, 71);
 }
 
+#django{
+    width: 72px;
+    height: 25px;
+    color: rgb(26, 2, 71);
+}
+
 .container{
     display: grid;
     grid-template-columns: auto;
@@ -154,6 +160,7 @@ i:hover{
         padding: 1vw;
         background-color: rgba(128, 128, 128, 0.9);
         font: normal bold 2vw 'Times New Roman', Times, serif;
+        flex-direction: row wrap;
     }
 
     #about{
