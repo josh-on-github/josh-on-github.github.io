@@ -135,6 +135,7 @@ i:hover{
 
     .desktop{
         display: flex;
+        flex-direction: column;
     }
 
     .container{
@@ -160,7 +161,6 @@ i:hover{
         padding: 1vw;
         background-color: rgba(128, 128, 128, 0.9);
         font: normal bold 2vw 'Times New Roman', Times, serif;
-        flex-flow: row wrap;
     }
 
     #about{
@@ -176,6 +176,7 @@ i:hover{
     #footer{
         padding: 1vw;
         margin-top: 5vw;
+        /* flex-direction: row !important; */
     }
 
     #footer-icons{
