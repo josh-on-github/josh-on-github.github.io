@@ -135,7 +135,9 @@ i:hover{
 
     .desktop{
         display: flex;
-        flex-direction: column;
+        /* flex-direction: column; */
+        flex-direction: row;
+        flex-wrap: wrap;
     }
 
     .container{
