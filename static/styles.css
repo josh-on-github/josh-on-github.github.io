@@ -134,6 +134,11 @@ i:hover{
     display: none;
 }
 
+figcaption{
+    font-style: italic;
+    font-size: medium;
+}
+
 @media screen and (min-width: 600px){
     .mobile{
         display: none;
@@ -161,7 +166,6 @@ i:hover{
 
     .desktop{
         display: flex;
-        /* flex-direction: column; */
         flex-direction: row;
         flex-wrap: wrap;
     }
@@ -204,7 +208,6 @@ i:hover{
     #footer{
         padding: 1vw;
         margin-top: 5vw;
-        /* flex-direction: row !important; */
     }
 
     #footer-icons{
